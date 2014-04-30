@@ -1,0 +1,9 @@
+/*
+@author: Lucas Alves
+@date: 28-04-2014
+*/
+
+.file-field div {
+    position: absolute;
+    top: -9999px;
+}

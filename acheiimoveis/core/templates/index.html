@@ -1,0 +1,102 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Achei Imóveis - Portal imobiliário</title>
+  <meta name="generator" content="Bootply" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- CSS -->
+  <link rel="shortcut icon" href="static/img/favicon.ico">
+  <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <!-- FIM CSS -->
+
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+          <![endif]-->
+
+          <!-- CSS code from Bootply.com editor -->
+
+          <style type="text/css">
+          .navbar-static-top {
+            margin-bottom:20px;
+        }
+
+        i {
+            font-size:16px;
+        }
+
+        .nav > li > a {
+            color:#787878;
+        }
+
+        footer {
+            margin-top:20px;
+            padding-top:20px;
+            padding-bottom:20px;
+            background-color:#efefef;
+        }
+
+        /* count indicator near icons */
+        .nav>li .count {
+            position: absolute;
+            bottom: 12px;
+            right: 6px;
+            font-size: 10px;
+            font-weight: normal;
+            background: rgba(51,200,51,0.55);
+            color: rgba(255,255,255,0.9);
+            line-height: 1em;
+            padding: 2px 4px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        /* indent 2nd level */
+        .list-unstyled li > ul > li {
+         margin-left:10px;
+         padding:8px;
+     }
+     </style>
+ </head>
+
+ {% block content %}
+ <div class="jumbotron">
+  <h1>Em breve você verá uma nova experiência no setor imobiliário</h1>
+  <h1>Aguarde</h1>
+  <p>...</p>
+</p>
+</div>
+{% endblock %}
+
+
+      <footer class="text-center">Desenvolvido por:
+        <a href="https://www.facebook.com/lucasalvf" target="_blank"><strong>Lucas Alves Ferreira</strong></a> | Telefone: +55 (16) 9 9232-5671
+        <a href="https://github.com/lucasaf" target="_blank"><strong>GitHub</strong></a>
+        <br>
+
+      </footer>
+
+      <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+      <!-- JavaScript jQuery code from Bootply.com editor -->
+
+      <script type='text/javascript'>
+      $(document).ready(function() {
+        $(".alert").addClass("in").fadeOut(4500);
+
+        $('.file-field').click(function() {
+            var $this = $(this);
+            var elements = document.getElementsById('.file-field').value;
+        })
+      });
+      </script>
+
+    </body>
+    </html>

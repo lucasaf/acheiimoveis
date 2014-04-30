@@ -3,19 +3,19 @@ from django import forms
 from .models import District, City, State
 
 
-class DistrictForm(form.ModelForm):
+class DistrictForm(forms.ModelForm):
 
     class Meta:
         model = District
 
 
-class CityForm(form.ModelForm):
+class CityForm(forms.ModelForm):
 
     class Meta:
         model = City
 
 
-class StateForm(form.ModelForm):
+class StateForm(forms.ModelForm):
 
     class Meta:
         model = State

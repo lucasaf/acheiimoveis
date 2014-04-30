@@ -1,0 +1,141 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cadastro de peças</title>
+  <meta name="generator" content="Bootply" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- CSS -->
+  <link rel="shortcut icon" href="static/img/favicon.ico">
+  <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- FIM CSS -->
+
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+          <![endif]-->
+
+          <!-- CSS code from Bootply.com editor -->
+
+          <style type="text/css">
+          .navbar-static-top {
+            margin-bottom:20px;
+          }
+
+          i {
+            font-size:16px;
+          }
+
+          .nav > li > a {
+            color:#787878;
+          }
+
+          footer {
+            margin-top:20px;
+            padding-top:20px;
+            padding-bottom:20px;
+            background-color:#efefef;
+          }
+
+          /* count indicator near icons */
+          .nav>li .count {
+            position: absolute;
+            bottom: 12px;
+            right: 6px;
+            font-size: 10px;
+            font-weight: normal;
+            background: rgba(51,200,51,0.55);
+            color: rgba(255,255,255,0.9);
+            line-height: 1em;
+            padding: 2px 4px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+          }
+
+          /* indent 2nd level */
+          .list-unstyled li > ul > li {
+           margin-left:10px;
+           padding:8px;
+         }
+         </style>
+       </head>
+
+       <!-- HTML code from Bootply.com editor -->
+
+       <body  >
+
+        <!-- Header -->
+        <div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-toggle"></span>
+              </button>
+              <a class="navbar-brand" href="">Cadastro de Peças</a>
+            </div>
+            {% if user.is_authenticated %}
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#"><i class="glyphicon glyphicon-user"></i> {{ user.username }}</a>
+                </li>
+              </ul>
+            </div>
+            {% endif  %}
+          </div><!-- /container -->
+        </div>
+        <!-- /Header -->
+
+        <!-- Main -->
+        <div class="container">
+          <div class="row">
+           <div class="col-md-3">
+            <!-- Left column -->
+            {% if user.is_authenticated %}
+            <h3>Menu</h3>
+            <ul class="list-unstyled">
+              <li class="nav-header"></i>
+                <ul class="list-unstyled">
+                  <li> <a href="/pecas/"><i class="glyphicon glyphicon-list"></i> Listar Peças </a></li>
+                  <li><a href="/auth/"><i class="glyphicon glyphicon-user"></i> Usuários</a></li>
+                  <li><hr></li>
+                  <li><a href="/auth/logout/"><i class="glyphicon glyphicon-off"></i> Logout</a></li>
+                </ul>
+              </li>
+              {% endif %}
+            </div><!-- /col-3 -->
+
+            <div class="col-md-9">
+              {% block content %}{% endblock content %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Main -->
+
+      <footer class="text-center">Desenvolvido por <a href="http://tetsistemas.com.br/" target="_blank"><strong>T&TSistemas</strong></a> | Telefone: +55 (11) 2626-0787</footer>
+
+      <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+      <!-- JavaScript jQuery code from Bootply.com editor -->
+
+      <script type='text/javascript'>
+      $(document).ready(function() {
+        $(".alert").addClass("in").fadeOut(4500);
+
+        $('.file-field').click(function() {
+            var $this = $(this);
+            var elements = document.getElementsById('.file-field').value;
+        })
+      });
+      </script>
+
+    </body>
+    </html>
