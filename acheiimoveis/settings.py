@@ -66,15 +66,6 @@ DATABASES = {
     }
 }
 
-'''
-DATABASES = {
-    'default': config(
-        'DATABASE_URL',
-        default='sqlite:///{0}'.format(os.path.join.(BASE_DIR, 'db.sqlite3')),
-        cast=db_url),
-}
-'''
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
@@ -95,9 +86,3 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
-
-
-try:
-    from local_settings import *
-except ImportError:
-    print 'Warning: local_settings not found'

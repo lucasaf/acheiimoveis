@@ -67,8 +67,3 @@ venv
 **staticfiles
 **/staticfiles
 staticfiles/
-
-local_settings.*
-
-rename-as.env
-rename-as.env.*
