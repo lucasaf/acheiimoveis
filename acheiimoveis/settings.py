@@ -40,6 +40,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'south',
+
+    #Apps sistema.
+    'acheiimoveis.core',
+    'acheiimoveis.myauth',
+    'acheiimoveis.addresses',
 )
 
 MIDDLEWARE_CLASSES = (
