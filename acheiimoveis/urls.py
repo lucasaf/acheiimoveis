@@ -10,3 +10,5 @@ urlpatterns = patterns('',
     url(r'^addresses/', include('acheiimoveis.addresses.urls')),
     url(r'', include('acheiimoveis.core.urls', namespace='core')),
 )
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
