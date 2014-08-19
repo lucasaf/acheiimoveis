@@ -17,3 +17,4 @@ gunicorn==18.0
 pystache==0.5.4
 static==1.0.2
 virtualenv==1.11.2
+psycopg2==2.5.3
