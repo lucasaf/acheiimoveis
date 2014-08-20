@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 import dj_database_url
 from unipath import Path
 BASE_DIR = Path(__file__).parent
@@ -40,6 +42,7 @@ INSTALLED_APPS = (
     'acheiimoveis.core',
     'acheiimoveis.addresses',
     'acheiimoveis.properties',
+    'acheiimoveis.estateagents',
 )
 
 MIDDLEWARE_CLASSES = (

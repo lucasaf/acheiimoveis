@@ -19,7 +19,7 @@ class RealEstate(models.Model):
     class Meta:
         verbose_name = 'Imobiliaria'
         verbose_name_plural = 'Imobiliarias'
-        ordereing = ['nome_fantasia']
+        ordering = ['nome_fantasia']
 
     def __unicode__(self):
         return self.nome_fantasia
@@ -41,7 +41,7 @@ class Realtor(models.Model):
     class Meta:
         verbose_name = 'Corretor'
         verbose_name_plural = 'Corretores'
-        ordereing = ['nome']
+        ordering = ['nome']
 
     def __unicode__(self):
         return self.nome

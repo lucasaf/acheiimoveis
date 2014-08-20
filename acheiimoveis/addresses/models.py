@@ -10,13 +10,13 @@ class Address(models.Model):
     complemento = models.CharField('Complemento', max_length=100, blank=True, null=True)
     bairro = models.CharField('Bairro', max_length=100, blank=False, null=False)
     cidade = models.CharField('Cidade', max_length=100, blank=False, null=False)
-    estado = modes.CharField('Estado', max_length=100, blank=False, null=False)
+    estado = models.CharField('Estado', max_length=100, blank=False, null=False)
     is_active = models.BooleanField('Ativo?',default=True)
 
     class Meta:
         verbose_name = 'Endereço'
         verbose_name_plural = 'Endereços'
-        ordereing = ['rua']
+        ordering = ['rua']
 
     def __unicode__(self):
         return self.rua +' - '+ self.numero +' - '+ self.cep

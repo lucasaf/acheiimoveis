@@ -15,7 +15,7 @@ class Property(models.Model):
     class Meta:
         verbose_name = 'Propiedade'
         verbose_name_plural = 'Propiedades'
-        ordereing = ['descricao']
+        ordering = ['descricao']
 
     def __unicode__(self):
         return self.descricao
@@ -27,20 +27,20 @@ class Image(models.Model):
     class Meta:
         verbose_name = 'Imagem'
         verbose_name_plural = 'Imagens'
-        ordereing = ['caminho_imagem']
+        ordering = ['caminho_imagem']
 
     def __unicode__(self):
         return self.caminho_imagem
 
 
 class characteristic(models.Model):
-    tipo = models.Charfield('Tipo', max_length=45, blank=False, null=False)
-    descricao = models.Charfield('Descrição', max_length=200, blank=False, null=False)
+    tipo = models.CharField('Tipo', max_length=45, blank=False, null=False)
+    descricao = models.CharField('Descrição', max_length=200, blank=False, null=False)
 
     class Meta:
         verbose_name = 'Caracteristica'
         verbose_name_plural = 'Caracteristicas'
-        ordereing = ['tipo']
+        ordering = ['tipo']
 
     def __unicode__(self):
         return self.tipo
