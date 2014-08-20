@@ -33,7 +33,7 @@ class Image(models.Model):
         return self.caminho_imagem
 
 
-class characteristic(models.Model):
+class Characteristic(models.Model):
     tipo = models.CharField('Tipo', max_length=45, blank=False, null=False)
     descricao = models.CharField('Descrição', max_length=200, blank=False, null=False)
 

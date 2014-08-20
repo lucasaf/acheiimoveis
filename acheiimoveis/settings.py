@@ -40,6 +40,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'south',
+
     'acheiimoveis.core',
     'acheiimoveis.addresses',
     'acheiimoveis.properties',
