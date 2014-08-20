@@ -38,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'acheiimoveis.core',
+    'acheiimoveis.addresses',
+    'acheiimoveis.properties',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,3 +83,10 @@ USE_TZ = True
 
 STATIC_ROOT = BASE_DIR.child('staticfiles')
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'core/media')
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'core/templates'),
+)
