@@ -1,0 +1,155 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Achei Imóveis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="{% static 'tuktuk/tuktuk.css' %}">
+    <link rel="stylesheet" href="{% static 'tuktuk/tuktuk.theme.default.css' %}">
+    <link rel="stylesheet" href="{% static 'tuktuk/tuktuk.icons.css' %}">
+<style>
+        body > header .logo {
+            margin-right: 1rem;
+            max-height: 3rem;
+            border-radius: .25rem;}
+
+        section.landing input {
+            border-radius: 1px 0px 0px 1px !important;
+            height: 48px;}
+
+        section.landing button {
+            border-radius: 0px 1px 1px 0px !important;
+            height: 48px;}
+
+        .button.large, button.large {
+            font-size: 1.3em;}
+    </style>
+</head>
+<body>
+    <!-- ========================== HEADER ========================== -->
+    <header class="bck white padding margin-bottom">
+        <div class="row">
+            <div class="column_6">
+                <img src="{% static 'images/mini_logo.jpg' %}" class="logo on-left"/>
+
+            </div>
+            <nav class="column_6 text right">
+                <a href="#" class="button bck theme"><span class="icon user"></span>Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bck orange landing text center">
+        <div class="row">
+            <div class="column_10 offset_1">
+                <h1><strong>Achei</strong>Imóveis</h1>
+                <h2 class="margin-bottom">Procurou, achou!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column_6 offset_3 form subscribe">
+                <input type="email" id="mail" class="large" placeholder="Ex: Casa, Vila Santa Rita...">
+                <button class="button large icon search"></button>
+            </div>
+        </div>
+        <h5 class="text book">Efetue uma pesquisa rápida.</h5>
+    </section>
+
+    <section class="bck dark padding text center">
+        <div class="row padding-bottom">
+            <div class="column_10 offset_1">
+                <h1 class="text book color theme">Lorem ipsum dolor sit amet</h1>
+                <h4>
+                    Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
+                </h4>
+            </div>
+        </div>
+
+        <div class="row padding-top">
+            <div class="column_3">
+                <h2 class="icon user"></h2>
+                <h5 class="text normal">Lorem ipsum dolor sit</h5>
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
+            </div>
+            <div class="column_3">
+                <h2 class="icon group"></h2>
+                <h5 class="text normal">Lorem ipsum dolor sit</h5>
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
+            </div>
+            <div class="column_3">
+                <h2 class="icon cog"></h2>
+                <h5 class="text normal">Lorem ipsum dolor sit</h5>
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
+            </div>
+            <div class="column_3">
+                <h2 class="icon twitter"></h2>
+                <h5 class="text normal">Lorem ipsum dolor sit</h5>
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="bck light padding">
+        <div class="row text thin center">
+            <div class="column_10 offset_1">
+                <h1 class="text book color theme">Lorem ipsum dolor sit amet</h1>
+                <h4>
+                    Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="landing">
+        <div class="row text center">
+            <div class="column_10 offset_1">
+                <h2 class="text bold color theme">Lorem ipsum dolor sit amet</h2>
+                <h4 class="text book italic">Quam sunt quos minima consequatur</h4>
+                <a href="#" class="button large margin-top">Yes, please!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding bck light">
+        <div class="row margin-bottom">
+            <div class="column_10 offset_1 text center">
+                <h1 class="color book theme">Author</h1>
+                <h3 class="text thin">Javi Jimenez is the CTO and co-founder of <a href="http://tapquo.com" class="text normal">tapquo</a>. A restless mind that always strives for continuous improvement, able to create frameworks like <a href="http://lungo.tapquo.com" class="text normal">Lungo</a>, <a href="http://quojs.tapquo.com" class="text normal">QuoJS</a>, <a href="http://monocle.tapquo.com" class="text normal">Monocle</a> used by thousands of developers around the world.</h3>
+             </div>
+         </div>
+
+        <div class="row ">
+            <div class="column_4 offset_4 text center">
+                <img src="http://cdn.tapquo.com/photos/soyjavi.jpg" class="responsive rounded margin-bottom"/>
+                <a href="https://twitter.com/soyjavi" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @soyjavi</a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="padding align center text small bck light">
+        <div class="row">
+            <div class="offset_3 column_6">
+                <p>Handcrafted by <a href="http://tapquo.com" class="text bold color theme">tapquo</a>
+                </p>
+                <smalL>We're a  user experiences company located in Bilbao, ES.</smalL>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{% static 'tuktuk/tuktuk.js' %}"></script>
+</body>
+</html><!--
+    <script src="{% static 'tuktuk/tuktuk.js' %}"></script>
+    <script>
+        TukTuk.Modal.loading();
+        setTimeout( TukTuk.Modal.hide, 1000);
+    </script>
+
+</body>
+</html>
